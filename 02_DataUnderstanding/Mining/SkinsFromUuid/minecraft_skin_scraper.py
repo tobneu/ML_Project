@@ -360,8 +360,8 @@ def resume_from_manifest(
 
 if __name__ == "__main__":
     run_pipeline(
-        uuid_list_path="../../data/skins/general/uuid_list.txt",
+        uuid_list_path="../../../data/skins/general/uuid_list.txt",
         image_directory="../../data/skins/general/skins",
-        manifest_path="../../data/skins/general/skin_manifest.csv",
+        manifest_path="../../../data/skins/general/skin_manifest.csv",
     )
 

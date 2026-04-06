@@ -25,6 +25,17 @@ Use `02_DataUnderstanding/Mining/MinecraftSkinScraper.ipynb` to run:
 - `run_pipeline(...)` for a full run.
 - `resume_from_manifest(...)` to continue from an existing CSV.
 
+## Keyword scraper for bad-class seed data
+
+The Cloudflare-aware keyword scraper lives in `02_DataUnderstanding/Mining/SkinsByKeyword/minecraft_keyword_scraper.py`.
+
+- Search pages are fetched via `cloudscraper`.
+- Skin IDs are parsed from `/skin/<id>/...` links.
+- PNGs are downloaded through `https://www.minecraftskins.com/skin/download/<id>`.
+- Output is written to `data/skins/bad/<keyword>/<keyword>_<id>.png`.
+
+Use `02_DataUnderstanding/DataUnderstanding.ipynb` to configure `keyword` and `target_count` and execute the scrape.
+
 # Some basic toughts, to be moved to the correct subfolder in the end
 
 ## Some details

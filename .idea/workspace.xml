@@ -1,18 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="60e414b9-3128-4a85-a3b6-2e90a051ef6c" name="Changes" comment="wip minecraftskins.com keyword scraper">
-      <change afterPath="$PROJECT_DIR$/02_DataUnderstanding/Mining/SkinsByKeyword/KeywordScraperPrompt.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02_DataUnderstanding/Mining/SkinsByKeyword/minecraft_keyword_scraper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02_DataUnderstanding/Mining/SkinsByKeyword/smoke_test_keyword_scraper.py" afterDir="false" />
+    <list default="true" id="60e414b9-3128-4a85-a3b6-2e90a051ef6c" name="Changes" comment="vibe-code: add keyword scraper">
+      <change afterPath="$PROJECT_DIR$/04_Modelling/cnn-for-mnist-classification.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/02_DataUnderstanding/DataUnderstanding.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/02_DataUnderstanding/DataUnderstanding.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_DataUnderstanding/Mining/SkinsByKeyword/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/02_DataUnderstanding/Mining/SkinsByKeyword/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_DataUnderstanding/Mining/SkinsByKeyword/minecraftskins_com_scraper.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_DataUnderstanding/Mining/SkinsByKeyword/test_minecraftskins_com_scraper.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_DataUnderstanding/Mining/SkinsFromUuid/MinecraftSkinScraper.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/02_DataUnderstanding/Mining/SkinsFromUuid/MinecraftSkinScraper.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_DataUnderstanding/Mining/SkinsFromUuid/minecraft_skin_scraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/02_DataUnderstanding/Mining/SkinsFromUuid/minecraft_skin_scraper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +34,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -64,20 +61,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;ai.playground.ignore.import.keys.banner.in.settings&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/FH/ml_project/data&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "ai.playground.ignore.import.keys.banner.in.settings": "true",
+    "git-widget-placeholder": "feat/modeling-mvp",
+    "last_opened_file_path": "D:/FH/ml_project/04_Modelling",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\FH\ml_project\data" />
@@ -106,7 +103,8 @@
       <updated>1774556109213</updated>
       <workItem from="1774556110947" duration="7150000" />
       <workItem from="1775149592533" duration="10869000" />
-      <workItem from="1775481718979" duration="3694000" />
+      <workItem from="1775481718979" duration="7617000" />
+      <workItem from="1775749296205" duration="789000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -132,7 +130,23 @@
       <option name="project" value="LOCAL" />
       <updated>1775168651219</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="vibe-code: add keyword scraper">
+      <option name="closed" value="true" />
+      <created>1775485507359</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1775485507359</updated>
+    </task>
+    <task id="LOCAL-00005" summary="vibe-code: add keyword scraper">
+      <option name="closed" value="true" />
+      <created>1775485510224</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1775485510224</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,7 +156,8 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="first scraping tests" />
     <MESSAGE value="wip minecraftskins.com keyword scraper" />
-    <option name="LAST_COMMIT_MESSAGE" value="wip minecraftskins.com keyword scraper" />
+    <MESSAGE value="vibe-code: add keyword scraper" />
+    <option name="LAST_COMMIT_MESSAGE" value="vibe-code: add keyword scraper" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>

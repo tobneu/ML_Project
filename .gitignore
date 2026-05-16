@@ -1,0 +1,91 @@
+# ----------------------------
+# Python
+# ----------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Packaging / build artifacts
+build/
+dist/
+site/
+*.egg-info/
+.eggs/
+
+# Testing / linting caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.coverage
+coverage.xml
+htmlcov/
+
+# ----------------------------
+# Jupyter / notebooks
+# ----------------------------
+.ipynb_checkpoints/
+
+# ----------------------------
+# IDE / editor
+# ----------------------------
+.idea/
+.vscode/
+*.iml
+
+# ----------------------------
+# OS files
+# ----------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ----------------------------
+# Logs / temp files
+# ----------------------------
+*.log
+*.tmp
+*.temp
+tmp/
+temp/
+
+# ----------------------------
+# Environment / secrets
+# ----------------------------
+.env
+.env.*
+*.env
+
+# ----------------------------
+# Machine learning artifacts
+# ----------------------------
+wandb/
+runs/
+tensorboard/
+lightning_logs/
+checkpoints/
+saved_models/
+models/
+*.ckpt
+*.ckpt.*
+*.h5
+*.keras
+*.pb
+*.tflite
+*.onnx
+
+# ----------------------------
+# Generated data
+# ----------------------------
+data/playerdata/
+data/skins/
+
+# If you want to keep empty folders in git, add .gitkeep files there.

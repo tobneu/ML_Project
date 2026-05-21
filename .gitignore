@@ -77,7 +77,6 @@ models/
 *.ckpt
 *.ckpt.*
 *.h5
-*.keras
 *.pb
 *.tflite
 *.onnx

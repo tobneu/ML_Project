@@ -77,7 +77,6 @@ models/
 *.ckpt
 *.ckpt.*
 *.h5
-*.keras
 *.pb
 *.tflite
 *.onnx
@@ -89,3 +88,4 @@ data/playerdata/
 data/skins/
 
 # If you want to keep empty folders in git, add .gitkeep files there.
+/06_Deployment/api/data/

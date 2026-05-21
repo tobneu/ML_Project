@@ -8,3 +8,10 @@ numpy
 scikit-learn
 pandas
 seaborn
+
+# for deployment
+fastapi
+uvicorn
+python-multipart
+pydantic
+rich

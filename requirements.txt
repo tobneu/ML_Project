@@ -8,6 +8,8 @@ numpy
 scikit-learn
 pandas
 seaborn
+opencv-python
+# ipympl interactive
 
 # for deployment
 fastapi

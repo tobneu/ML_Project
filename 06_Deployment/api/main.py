@@ -11,7 +11,6 @@ from tensorflow.keras import layers, Sequential
 ## Ignore this, our data agumentation layer may be required for the model to load correctly
 # TODO: This can be resolved by building the model correctly
 @tf.keras.utils.register_keras_serializable(package="Custom", name="RandomColorShift")
-
 class RandomColorShift(layers.Layer):
     def __init__(self, shift_val=0.1, **kwargs):
         super().__init__(**kwargs)

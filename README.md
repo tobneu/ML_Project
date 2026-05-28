@@ -49,27 +49,8 @@ The repository follows the six CRISP-DM phases, one directory per phase:
 | `models/` | — | Trained Keras checkpoints. |
 
 ---
-
-## Pipeline at a glance
-
-```
-   Kaggle 600k skins ───┐                       
-                        ├──> good_cleaned/   ───┐    
-   minecraftskins.com   │                       │
-   (cloudscraper)    ───┤                       │   ┌──────── Keras CNN ─────────┐
-   keyword="spiderman"  ├──> spiderman_cleaned/ ├──>│  Conv + BN + Pool x N      │──> P(prohibited)
-                        │                       │   │  GlobalAveragePooling      │
-   Manual CNN-in-the-   │                       │   │  Dense + Sigmoid           │
-   loop label cleaning ─┘                       │   └────────────────────────────┘
-                                                │                 │
-                                                │                 ▼ threshold = 0.652
-                                                │     ┌──────────────────────────┐
-                                                │     │     FastAPI service      │
-                                                │     │ POST /check/player/      │
-                                                │     │ -> { score, risk }       │
-                                                │     └──────────────────────────┘
-```
-
+## Pipeline
+![img.png](img.png)
 ---
 
 ## Key results
@@ -90,7 +71,7 @@ Full metrics, ROC and PR curves, and the deployment recommendation are in
 
 ---
 
-## How to run
+## How to run (not verified)
 
 ### Requirements
 

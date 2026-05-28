@@ -5,10 +5,44 @@ import tensorflow as tf
 import numpy as np
 from rich import status
 
+from tensorflow.keras import layers, Sequential
+
+
+## Ignore this, our data agumentation layer may be required for the model to load correctly
+# TODO: This can be resolved by building the model correctly
+@tf.keras.utils.register_keras_serializable(package="Custom", name="RandomColorShift")
+
+class RandomColorShift(layers.Layer):
+    def __init__(self, shift_val=0.1, **kwargs):
+        super().__init__(**kwargs)
+        self.shift_val = shift_val
+
+    def call(self, x, training=None):
+        if not training:
+            return x  # passthrough at inference
+        rgb = x[..., :3]  # mask the R, G, B Values from x
+        alpha = x[..., 3:4]  # mask alpha, dont change it
+        noise = tf.random.uniform(tf.shape(rgb), -self.shift_val, self.shift_val)
+        return tf.concat([tf.clip_by_value(rgb + noise, 0.0, 1.0), alpha], axis=-1)  # put data with noise together
+
+    def get_config(self):
+        config = super().get_config()
+        config.update({
+            "shift_val": self.shift_val
+        })
+        return config
+
+
+data_augmentation = tf.keras.Sequential([
+    RandomColorShift(0.1),
+    layers.GaussianNoise(0.05),  # already respects training flag
+])
+
+
 app = FastAPI()
 
 model = tf.keras.models.load_model("./model/best_model.keras")
-model_threshold = 0.265
+model_threshold = 0.652
 
 class PlayerCheckRequest(BaseModel):
     player_name: str
@@ -55,3 +89,4 @@ def load_skin(path: str):
 
 def preprocess_skin():
     pass
+

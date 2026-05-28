@@ -60,4 +60,4 @@ class MinecraftSkinDownloader:
 
 
 if __name__ == "__main__":
-    MinecraftSkinDownloader().download_by_uuid("069a79f4-44e9-4726-a5be-fca90e38aaf5", "steve_skin.png")
+    MinecraftSkinDownloader().download_by_uuid("dda6ea83-75bc-4f9f-b2bd-eb5f2e6c297a", "spiderman.png")
